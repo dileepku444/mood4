@@ -1,0 +1,12 @@
+{
+  "domain": "raylogic_mod2u",
+  "name": "Raylogic MOD2U",
+  "version": "2.3.0",
+  "documentation": "https://github.com/dileepku444/DILEEPGO",
+  "issue_tracker": "https://github.com/dileepku444/DILEEPGO/issues",
+  "dependencies": [],
+  "codeowners": ["@dileepku444"],
+  "requirements": [],
+  "iot_class": "local_push",
+  "config_flow": true
+}

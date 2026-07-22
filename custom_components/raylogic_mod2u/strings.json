@@ -1,0 +1,47 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add Raylogic MOD2U",
+        "description": "Device ka IP address daalo. Har channel ka type wahi chuno jo aapne Raylogic GO app mein (Select Type screen) set kiya hai - device khud apna type nahi batata. Area wahi daalo jo Mod Settings screen mein dikhta hai (e.g. 12). Area = 0 sirf tab chalega jab dono channel 'relay' ho (HA khud seekh lega app/switch se ek baar toggle karke) - Dimmer/Fan/Curtain ke liye Area zaroor manually dena hoga.",
+        "data": {
+          "host": "Device IP Address",
+          "port": "Port (default 5550)",
+          "legacy_area": "Area (0 = relay-only auto-learn, 1-16 = manual)",
+          "legacy_channel_count": "Channel Count",
+          "channel_start": "First Channel Number (usually 1, but check Raylogic GO app if channels aren't 1-2)",
+          "channel_1_type": "Channel 1 Type",
+          "channel_2_type": "Channel 2 Type"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to device. Check IP address and ensure device is powered on.",
+      "unknown": "Unexpected error. Check logs for details.",
+      "area_required_for_non_relay": "Dimmer/Fan/Curtain channels ke liye Area (0 nahi) manually dena zaroori hai - auto-learn sirf Relay ke liye kaam karta hai."
+    },
+    "abort": {
+      "already_configured": "This Raylogic MOD2U device is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Configure Raylogic MOD2U",
+        "description": "Channel type (relay/dimmer/fan/curtain), Area, ya channel numbering yahan se badlo - device delete karne ki zaroorat nahi.",
+        "data": {
+          "host": "Device IP Address",
+          "port": "Port (default 5550)",
+          "legacy_area": "Area (0 = auto-learn, 1-16 = manual)",
+          "legacy_channel_count": "Channel Count",
+          "channel_start": "First physical channel number",
+          "channel_1_type": "Channel 1 type",
+          "channel_2_type": "Channel 2 type"
+        }
+      }
+    },
+    "error": {
+      "area_required_for_non_relay": "Dimmer/Fan/Curtain ke liye Area manually dena zaroori hai (0 sirf Relay LEARN mode ke liye chalta hai)."
+    }
+  }
+}
